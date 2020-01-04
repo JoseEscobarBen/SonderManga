@@ -1,0 +1,168 @@
+.navBarWrapper *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+}
+  
+.navBarWrapper{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  
+  transition: .5s;
+
+  /*Color*/ background: #f04b47;
+}
+
+.navBarWrapper nav{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2%;
+  align-items: center;
+  border-bottom: .2px solid #ee4447;
+  height: 90px;
+  /*El height esta en auto*/; 
+}
+
+.logoWrapper{
+  display: flex;
+  align-items: center;
+}
+
+.logoIcon{
+  height: 50px;
+  padding: 0 2px;
+}
+
+.logo{
+  padding: 0px 5px;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navLink li{
+  list-style: none;
+  
+}
+
+.navLink li a{
+  display: inline-block;
+  text-decoration: none;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  padding: 17px;
+  width: 100%;
+  font-weight: 400;
+  /*tamaño*/ font-size: .95em;
+  /*color*/color: #fff; 
+}
+
+.link::after{
+  content:'';
+  display:block;
+  width:0;
+  transition: width .5s;
+  
+  /*tamaño*/height:5px;
+  /*color*/background: #fff;
+}
+
+.link:hover::after{
+  width: 100%;
+  transition: width .5s;
+}
+
+.menuIcon{
+    display:none;
+  }
+  
+.navLink{
+  position: relative;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  height: auto;
+  }
+
+.menuIconWrapper{
+  display:none;
+}
+
+
+.ocultar{
+    transition: .5s;
+    transform: translateY(-100%);
+}
+
+@media only screen and (max-width: 768px) {
+  .navBarWrapper nav{
+    height: 50px;
+    /*El height esta en auto*/; 
+  }
+  
+  .navLink li.active, .navLink li:hover{
+    transition: .5s;
+    /*efecto*/background:#e27375;
+  }
+  
+  .menuIconWrapper{
+    display: block;
+    height: 40px;
+    padding: 3px 0;
+    cursor: pointer;
+  }
+  
+  .navLink{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    display: flex;
+    flex-direction: column;
+    overflow:hidden;
+    text-align: center;
+
+    /*color*/background: #ee4447b6;
+    /*efecto*/transition: height .3s linear;
+  }
+  
+  .link::after{
+    display: none;
+  }
+
+  .link:hover::after{
+    display: none;
+  }
+  
+  .menuIconWrapper{
+    display: inline-block;
+  }
+  
+  .line{
+    width: 35px;
+    height: 5px;
+    margin: 5px;
+    display: block;
+    background: #fff; 
+    border-radius:10px;
+    transition: .3s;
+  }
+  
+  .showMe{
+      height: 200px;
+      /*cada elemento es 50px*/
+  }  
+}
+

@@ -1,0 +1,132 @@
+
+.homePageContainer{
+    width: 100%;
+    display: grid; 
+    grid-template-columns: 10% 1fr 16% 10%;
+    grid-template-rows: repeat(4,auto);
+}
+
+.homePageContainer .geners{
+    grid-column: 2/4;
+    grid-row: 1;
+}
+
+.homePageContainer .banner{
+    grid-column: 2/4;
+    grid-row: 2;
+}
+
+.homePageContainer .backgroundTop{
+    grid-column: 1/5;
+    grid-row: 3;
+    background: #ecedef;
+}
+
+.homePageContainer .top{
+    grid-column: 2/4;
+    grid-row: 3;
+}
+
+.homePageContainer .body{
+    grid-column: 2/3;
+    grid-row: 4;
+}
+
+.homePageContainer .news{
+    grid-column: 3;
+    grid-row: 4;
+    background-image: url('https://i.pinimg.com/236x/9e/e3/4c/9ee34c803f16572d8579bafe626c92b0.jpg');
+}
+
+
+@media only screen and (max-width: 1024px){
+    .homePageContainer{
+        width: 100%;
+        display: grid; 
+        grid-template-columns: 2% 70% 26% 2%;
+        grid-template-rows: repeat(4,auto);
+    }
+
+    .homePageContainer .geners{
+        grid-column: 1/5;
+    }
+
+    .homePageContainer .banner{
+        grid-column: 2/4;   
+    }
+
+    .homePageContainer .backgroundTop{
+        grid-column: 1/5;
+        background: #ecedef;
+    }
+    
+    .homePageContainer .top{
+        grid-column: 2/4;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .homePageContainer{
+        width: 100%;
+        display: grid; 
+        grid-template-columns: 2% 1fr 2%;
+        grid-template-rows: repeat(5,auto);
+    }
+    
+    .homePageContainer .banner{
+        grid-column: 1/4;
+    }
+    
+    .homePageContainer .top{
+        grid-column: 1/4;
+    }
+    
+    .homePageContainer .body{
+        grid-column: 1/4;
+    }
+    
+    .homePageContainer .news{
+        grid-column: 1/4;
+        grid-row: 5;
+    }
+}
+
+@media only screen and (max-width:425px){
+    .homePageContainer{
+        width: 100%;
+        display: grid; 
+        grid-template-columns: 2% 1fr 2%;
+        grid-template-rows: repeat(5,auto);
+    }
+    
+    .homePageContainer .banner{
+        grid-column: 1/4;
+        grid-row: 1;
+    }
+
+    .homePageContainer .backgroundTop{
+        grid-column: 1/4;
+        grid-row: 2;
+        background: #ecedef;
+    }
+    
+    .homePageContainer .top{
+        grid-column: 1/4;
+        grid-row: 2;
+    }
+    
+    .homePageContainer .body{
+        grid-column: 1/4;
+        grid-row: 3;
+    }
+    
+    .homePageContainer .news{
+        grid-column: 1/4;
+        grid-row: 4;    
+    }
+
+    .homePageContainer .geners{
+        grid-column: 1/4;
+        grid-row: 5;
+    }
+}

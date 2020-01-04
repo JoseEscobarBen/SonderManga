@@ -1,0 +1,163 @@
+*{
+    box-sizing: border-box;
+}
+
+.cardMangaContainer{
+    width: 45%;
+    height: 15vw;
+    display: grid;
+    grid-template-columns: 40% 1fr 1fr 1fr;
+    grid-template-rows: 50% 1fr 1fr;
+    margin: 10px 10px;
+}
+
+.cardMangaContainer a {
+    grid-column: 1;
+    grid-row: 1/4;
+    text-decoration: none;
+}
+
+.cardMangaContainer a img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cardMangaContainer .tittleCardManga,.cardMangaContainer .newChapter,.cardMangaContainer .chapters,.cardMangaContainer .newDate,.cardMangaContainer .views{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;  
+    justify-content: left;
+    margin: 0 10px;
+} 
+
+.cardMangaContainer .tittleCardManga{
+    grid-column: 2/5;
+    grid-row: 1;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.cardMangaContainer .tittleCardManga h3{
+    font-weight: 900;
+    font-size: 1em;
+    color: #4e4e52;
+} 
+
+.cardMangaContainer .newChapter{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.cardMangaContainer .newDate{
+    grid-column: 3/5;
+    grid-row: 2;
+}
+
+.cardMangaContainer .views{
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.cardMangaContainer .chapters{
+    grid-column: 3/5;
+    grid-row: 3;
+}
+
+
+.cardMangaContainer .newChapter p{
+    font-weight: 700;
+    font-size: .9em;
+}
+
+.cardMangaContainer .chapters p{
+    background: #f04b47;
+    padding: 2px 7px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: .75em;
+}
+
+.cardMangaContainer .newDate p, .cardMangaContainer .views p{
+    font-size: .8em;
+    font-weight: 400;
+    color: #646468;
+    display: flex;
+    justify-content: left;
+}
+
+
+@media only screen and (max-width: 1024px){
+    .cardMangaContainer{
+        width: 45%;
+        height: 15vw;
+        display: grid;
+        grid-template-columns: 35% auto 1fr 1fr;
+        grid-template-rows: 50% 1fr 1fr;
+        margin: 10px 10px; 
+    }
+
+    .cardMangaContainer .tittleCardManga h3{
+        font-size: 1.5vw;
+    } 
+
+    .cardMangaContainer .newChapter p, .cardMangaContainer .newDate p, .cardMangaContainer .views p{
+        font-size: 1.2vw;
+    }
+
+    .cardMangaContainer .chapters p{
+        font-size: .9vw;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .cardMangaContainer{
+        width: 45%;
+        height: 25vw;
+        display: grid;
+        grid-template-columns: 35% 30% 1fr 1fr;
+        grid-template-rows: 50% 1fr 1fr;
+        margin: 10px 10px; 
+    }
+    
+    .cardMangaContainer{
+        border: 1px solid #6464680e;
+    }
+
+    .cardMangaContainer .tittleCardManga h3{
+        font-size: 2.3vw;
+    } 
+
+    .cardMangaContainer .newChapter p, .cardMangaContainer .newDate p, .cardMangaContainer .views p{
+        font-size: 1.8vw;
+    }
+
+    .cardMangaContainer .chapters p{
+        font-size:  1.2vw;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .cardMangaContainer{
+        width: 100%;
+        height: 40vw;
+        display: grid;
+        grid-template-columns: 35% 34% 1fr 1fr;
+        grid-template-rows: 50% 1fr 1fr;
+        margin: 10px 10px; 
+    }
+
+
+    .cardMangaContainer .tittleCardManga h3{
+        font-size: 1.1em;
+    } 
+
+    .cardMangaContainer .newChapter p, .cardMangaContainer .newDate p, .cardMangaContainer .views p{
+        font-size: 3.5vw;
+    }
+
+    .cardMangaContainer .chapters p{
+        font-size: .6em;
+    }
+}

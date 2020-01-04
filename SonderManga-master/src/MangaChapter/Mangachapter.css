@@ -1,0 +1,126 @@
+.mangaChapterContainer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10% 30% 1fr 10%;
+    grid-template-rows: repeat(3,auto);
+}
+
+.mangaChapterContainer .generSection{
+    grid-column: 2/4;
+    grid-row: 1;
+}
+
+.mangaChapterContainer .backgroundDataMangaSection{
+    grid-column: 1/5;
+    grid-row: 2;
+    background: #ecedef;
+    z-index: 70;
+}
+
+.mangaChapterContainer .dataMangaSection{
+    grid-column: 2/4;
+    grid-row: 2;
+    z-index: 90;
+}
+
+.mangaChapterContainer .descriptionMangaSection{
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.mangaChapterContainer .chaptersMangaSection{
+    grid-column: 3;
+    grid-row: 3;
+}
+
+
+.mangaChapterContainer .descriptionMangaSection p{
+    font-weight: 500;
+    font-size: .8em;
+    line-height: 1.8em;
+    color: #7c7d7e;
+}
+
+@media only screen and (max-width: 1024px){
+    .mangaChapterContainer{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 2% 30% 1fr 2%;
+        grid-template-rows: repeat(3,auto);
+    }    
+
+    .mangaChapterContainer .generSection{
+        grid-column: 1/5;
+        grid-row: 1;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .mangaChapterContainer{
+        grid-template-columns: 2% 1fr 2%;
+        grid-template-rows: repeat(4,auto);
+    }
+
+    .mangaChapterContainer .generSection{
+        grid-column: 1/4;
+        grid-row: 1;
+    }
+    
+    .mangaChapterContainer .backgroundDataMangaSection{
+        grid-column: 1/4;
+        grid-row: 2;
+        background: #ecedef;
+        z-index: 70;
+    }
+    
+    .mangaChapterContainer .dataMangaSection{
+        grid-column: 2;
+        grid-row: 2;
+        z-index: 90;
+    }
+    
+    .mangaChapterContainer .descriptionMangaSection{
+        grid-column: 2;
+        grid-row: 3;
+    }
+    
+    .mangaChapterContainer .chaptersMangaSection{
+        grid-column: 2;
+        grid-row: 4;
+    }
+}
+
+@media only screen and (max-width:425px){
+    .mangaChapterContainer{
+        grid-template-columns: 2% 1fr 2%;
+        grid-template-rows:repeat(4,auto);
+    }
+    
+    .mangaChapterContainer .backgroundDataMangaSection{
+        grid-column: 1/4;
+        grid-row: 1;
+        background: #ecedef;
+        z-index: 70;
+    }
+    
+    .mangaChapterContainer .dataMangaSection{
+        grid-column: 2;
+        grid-row: 1;
+        z-index: 90;
+    }
+    
+    .mangaChapterContainer .descriptionMangaSection{
+        grid-column: 2;
+        grid-row: 2;
+    }
+    
+    .mangaChapterContainer .chaptersMangaSection{
+        grid-column: 2;
+        grid-row:3;
+    }
+
+    .mangaChapterContainer .generSection{
+        grid-column: 1/4;
+        grid-row: 4;
+    }
+}

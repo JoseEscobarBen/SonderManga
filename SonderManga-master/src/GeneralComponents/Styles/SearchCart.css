@@ -1,0 +1,201 @@
+
+.cardMangaDescriptionContainer{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 15% 2% auto 1fr;
+    grid-template-rows: repeat(2,auto);
+    margin: 10px 10px;
+}
+
+.cardMangaDescriptionContainer a {
+    grid-column: 1;
+    grid-row: 1/3;  
+}
+.cardMangaDescriptionContainer img{
+    grid-column: 1;
+    grid-row: 1/3;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.cardMangaDescriptionContainer .tittle{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;  
+    justify-content: center;
+} 
+
+.cardMangaDescriptionContainer .tittle{
+    margin: 0;
+    grid-column: 3/5;
+    grid-row: 1;
+    display: flex;  
+    justify-content: left;
+    text-decoration: none;
+}
+
+.cardMangaDescriptionContainer .tittle h3{
+    font-weight: 900;
+    padding: 2px 0;
+    font-size: .9em;
+    color: #4e4e52;
+}
+
+.cardMangaDescriptionContainer .dataContainer{
+    grid-column: 3/5;
+    grid-row: 2/3;
+    background: #f3f3f3;
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    grid-template-rows: repeat(4,auto);
+}
+
+.cardMangaDescriptionContainer .dataContainer .subtittle{
+    padding: 5px 10px;
+    font-size: .9em;
+    font-weight: 600;
+}
+
+.cardMangaDescriptionContainer .dataContainer .gender{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.cardMangaDescriptionContainer .dataContainer .emision{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.cardMangaDescriptionContainer .dataContainer .view{
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.cardMangaDescriptionContainer .dataContainer .lastChapter{
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.cardMangaDescriptionContainer .dataContainer .description{
+    padding: 5px 10px;
+    font-size: .9em;
+    font-weight: 500;
+    margin: 0;
+}
+
+.cardMangaDescriptionContainer .dataContainer .dataGender{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.cardMangaDescriptionContainer .dataContainer .dataEmision{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.cardMangaDescriptionContainer .dataContainer .dataViews{
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.cardMangaDescriptionContainer .dataContainer .dataLastChapter{
+    grid-column: 2;
+    grid-row: 4;
+    text-decoration: none;  
+    color: #f04b47;
+    display: flex;
+}
+
+
+@media only screen and (max-width: 1024px){
+    .cardMangaDescriptionContainer{
+        margin: 10px 10px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .cardMangaDescriptionContainer{
+        width: 44%;
+        height: auto;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(3,auto);
+        border: 1px solid #e6e5e5;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .cardMangaDescriptionContainer .dataContainer{
+        grid-column: 3/5;
+        grid-row: 2/3;
+        background: #f3f3f3;
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        grid-template-rows: repeat(4,auto);
+    }
+    
+
+    .cardMangaDescriptionContainer a {
+        grid-column: 1/2;
+        grid-row: 1/3;   
+    }
+
+    .cardMangaDescriptionContainer a .shadowImgCardSearch{
+        width: 100%;
+        height: 100%; 
+        background: linear-gradient( rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 30%, rgba(0, 0, 0, 0.74));  
+    }
+
+    .cardMangaDescriptionContainer .tittle{
+        grid-column: 1/2;
+        grid-row: 2;
+        display: flex;
+        justify-content: center;
+        margin: 2%;
+    }
+
+    .cardMangaDescriptionContainer .dataContainer{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    } 
+
+    .cardMangaDescriptionContainer .tittle h3{
+        color: #fff;
+        margin: 5px;
+        font-size: 2.8vw;
+    }
+    
+    
+    .cardMangaDescriptionContainer .subtittle, .cardMangaDescriptionContainer .description{
+        font-size: .7em;
+    }
+    
+}
+
+
+@media only screen and (max-width: 425px){
+    .cardMangaDescriptionContainer{
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(3,auto);
+        border: 1px solid #e6e5e5;
+    }
+
+    .cardMangaDescriptionContainer a {
+        margin: 2%;
+    }
+
+    .cardMangaDescriptionContainer .subtittle, .cardMangaDescriptionContainer .description{
+        font-size: .7em;
+    }
+
+    .cardMangaDescriptionContainer .tittle h3{
+        font-size: 1.3em;
+    }
+    
+} 

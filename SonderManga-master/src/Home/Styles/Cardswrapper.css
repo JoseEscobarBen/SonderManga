@@ -1,0 +1,16 @@
+
+.last-episodes{
+    background-color:#ffff;
+    position: relative;
+    color: #707070;
+    padding: 20px 0; 
+}
+
+.episode-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+

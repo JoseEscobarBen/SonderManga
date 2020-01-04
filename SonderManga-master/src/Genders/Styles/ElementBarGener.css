@@ -1,0 +1,39 @@
+
+
+.contentElementGener{
+    width: 100%;
+    height: auto;
+    display: block;
+    text-decoration: none;
+    margin: 1% 0;
+    outline: none;
+}
+
+.contentElementGener p{
+    color: #333333;
+    font-weight: 600;
+    font-size: .9em;
+    text-transform: lowercase;
+}
+
+.contentElementGener p:hover{ 
+    color: #f04b47;
+    
+}
+
+ 
+@media only screen and (max-width:768px){
+    .contentElementGener{
+        width: 30%;
+        margin: 10px 1%;
+        justify-content: center;
+    }
+} 
+
+@media only screen and (max-width:425px){
+    .contentElementGener{
+        width: 45%;
+        margin: 10px 1%;
+        justify-content: center;
+    }
+} 

@@ -1,0 +1,18 @@
+.FooterSection{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    background: #dcdcdc;
+    margin-top: 2%; 
+    height: 50px;
+}
+
+.ContainerFooter{
+    padding: 1% 2%;
+}
+
+.FooterSection p{
+    margin: 0;
+    font-size: 0.7em;
+    color: #000000b9;
+}

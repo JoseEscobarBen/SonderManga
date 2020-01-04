@@ -1,0 +1,11 @@
+.generContainer{
+    padding: 10px 0;
+    border-bottom: 2px solid rgb(238, 231, 231);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.generContainer .buttonMore{
+    border: 2px solid rgb(238, 231, 231);
+}   

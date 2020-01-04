@@ -1,0 +1,10 @@
+.topMangaCartsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 0  20px 0;
+}
+
+.topMangaCartsContainer h2{
+    border: none;
+}

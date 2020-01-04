@@ -1,0 +1,100 @@
+.searchPageContainer{
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    grid-template-rows: repeat(3, auto);
+}
+
+.searchPageContainer .generSection{
+    grid-column: 2;
+    grid-row: 1; 
+}
+
+.searchPageContainer .inputContainer{
+    grid-column: 1/4;
+    grid-row: 2; 
+    height: 90px;
+    background: #ecedef;
+    text-align: center;
+    padding: 20px;
+}
+
+#inp{
+    width: 60%;
+    height: 100%;
+    margin : 0 auto;
+    padding: 20px;
+    border: none;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.searchPageContainer .bodyContainer{
+    grid-column: 2;
+    grid-row: 3;
+}
+
+@media only screen and (max-width: 1024px){
+    .searchPageContainer{
+        display: grid;
+        grid-template-columns: 2% 1fr 2%;
+        grid-template-rows: repeat(3, auto);
+    }
+
+    .searchPageContainer .generSection{
+        grid-column: 1/4;
+        grid-row: 1; 
+    }
+    
+    .searchPageContainer .inputContainer{
+        grid-column: 1/4;
+        grid-row: 2; 
+        height: 90px;
+        background: #ecedef;
+        text-align: center;
+        padding: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 425px){
+    .searchPageContainer{
+        display: grid;
+        grid-template-columns: 2% 1fr 2%;
+        grid-template-rows: 90px repeat(2, auto);
+    }
+
+    .searchPageContainer .inputContainer{
+        width: 100%;
+        grid-column: 1/4;
+        grid-row: 1; 
+        padding: 20px 0;
+        position: fixed;
+        z-index: 85;
+        transition: .49s;
+    }
+    
+    #inp{
+        width: 90%;
+        height: 100%;
+        margin : 0 auto;
+        padding: 20px;
+        border: none;
+        box-sizing: border-box;
+        outline: none;
+    }
+
+    .searchPageContainer .bodyContainer{
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .searchPageContainer .generSection{
+        grid-column: 1/4;
+        grid-row: 3; 
+    }
+
+    .ocultarInput{
+        transition: .5s;
+        transform: translateY(-200%);
+    }   
+}

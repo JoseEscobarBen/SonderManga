@@ -1,0 +1,15 @@
+{
+  "short_name": "SonderManga",
+  "name": "SonderManga",
+  "icons": [
+    {
+      "src": "sondericon.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "imagen/ícono x"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#f04b47",
+  "background_color": "#fff"
+}

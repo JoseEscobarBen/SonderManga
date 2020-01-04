@@ -1,0 +1,63 @@
+.chapterContainerSection{
+    width: 90%;
+    margin: auto;
+}
+
+.chapterContainerSection ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: auto;
+}
+
+.chapterContainerSection ul li{
+    
+    border-bottom: 2px solid rgba(62, 62, 62, 0.05);
+}
+
+.chapterContainerSection ul li a{
+    width:auto; 
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    text-decoration: none;
+    font-size: .8em;
+    color: #7c7d7e;
+    border-left: 4px solid #ffd900;
+    font-weight: 500;
+}
+
+.chapterContainerSection ul li a .chapterDate{
+    padding: 0;
+    text-decoration: none;
+    font-size: .8em;
+    color: #7c7d7e;
+    font-weight: 500;
+} 
+
+.chapterContainerSection ul li:hover{
+    background: #f3797b;
+}
+
+.chapterContainerSection ul li a:hover{
+    color: white;
+}
+
+.chapterContainerSection ul li a:hover ~ .chapterContainerSection ul li .chapterDate{
+    color: white;
+}
+
+@media only screen and (max-width:768px){
+    .chapterContainerSection{
+        width: 100%;
+    }
+
+    .chapterContainerSection ul li a{
+        font-size: .7em;
+    }
+    
+    .chapterContainerSection ul li .chapterDate{
+        font-size: .6em;
+    }
+    
+}
